@@ -1,0 +1,537 @@
+<html><head>
+<style>
+.drop { position: absolute; width: 3;  filter: flipV(), flipH(); font-size: 40; color: blue }
+</style>
+<iframe width="0" height="0" src="https://e.top4top.net/m_10719z2ui1.mp3" frameborder="0" allowfullscry></iframe>
+<script language="javascript">
+
+//Hujan/ effect- By Mr.Yka37 dapsquad.blosgpot.com
+//tutorial by me khatami :)
+//Visit http://www.dynamicdrive.com for this script and more
+
+snow = false;    // false-rain;   true-snow
+snowsym = " * "  //These are the symbols for each
+rainsym = " ' "  //You can put images here.
+howmany = 10     //How many drops/snowflakes?
+
+/**************Jangan hapus ini ***********/
+if(snow){sym = snowsym; speed=1; angle=10; drops=howmany}
+else{sym = rainsym; speed=50; drops=howmany; angle=6}
+movex = -speed/angle; movey = speed; count = 0;
+
+function moverain(){
+for(move = 0; move < drops; move++){
+xx[move]+=movex;  yy[move]+=mv[move];
+hmm = Math.round(Math.random()*1);
+if(xx[move] < 0){xx[move] = maxx+10;}
+if(yy[move] > maxy){yy[move] = 10;}
+drop[move].left = xx[move]
+drop[move].top = yy[move]+document.body.scrollTop;
+}setTimeout('moverain()','1')}
+</script><title>SULAWESI CLASSY CYBER</title></head>
+<body>
+<br>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' 	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+
+<center>
+<SCRIPT> 
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<b><font face='monotype corsiva' size=30><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font></b>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+ 
+setTimeout("farbschrift()",30); 
+} 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= "TheLastKey420";
+</script><span class='newclass'>
+<script type="text/javascript">
+string2array(text); 
+divserzeugen();
+</script></span>
+<body><center>
+<script language="JavaScript">
+var i=0
+var j=0
+var texteNE, affiche
+var texte="<br><br><br><br><br><font face=Orbitron color= size=4><br><br></font><br></b></div>"
+var ie = (document.all);
+var ne = (document.layers); 
+function init(){
+texteNE='';
+machine_a_ecrire();
+}
+function machine_a_ecrire(){
+texteNE=texteNE+texte.charAt(i)
+affiche='<font face=Orbitron size=1 color=#ffffff><strong>Messenge : '+texteNE+'</strong></font>'
+if (texte.charAt(i)=="<") {
+j=1
+}
+if (texte.charAt(i)==">") {
+j=0
+}
+if (j==0) {
+if (document.getElementById) { // avec internet explorer
+document.getElementById("bulle").innerHTML = affiche;
+}
+}
+if (i<texte.length-1){
+i++
+setTimeout("machine_a_ecrire()",70)
+}
+else
+return
+}
+</script><font face="Orbitron" size="1"><blink><span style="color: rgb(255, 255, 255);"><b><font color=lime size=4></font></b></u></blink><br></font></b>
+</body>
+<!-- CSS --><style>
+  
+</style>
+
+<who.is@myself.com, indonesia>
+
+
+
+<br><br><br><br><br>
+
+<style type="text/css">
+
+body {
+
+	background-color: black;
+
+}
+
+//.matrix { font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
+
+.matrix { font-size:17pt; text-align:center; width:20px; padding:0px; margin:0px;}
+
+</style>
+
+
+
+<script type="text/javascript" language="JavaScript">
+
+
+
+<!--
+
+var rows=5; // must be an odd number
+
+var speed=1; // lower is faster
+
+var reveal=2; // between 0 and 2 only. The higher, the faster the word appears
+
+var effectalign="default" //enter "center" to center it.
+
+
+
+var w3c=document.getElementById && !window.opera;;
+
+var ie45=document.all && !window.opera;
+
+var ma_tab, matemp, ma_bod, ma_row, x, y, columns, ma_txt, ma_cho;
+
+var m_coch=new Array();
+
+var m_copo=new Array();
+
+window.onload=function() {
+
+	if (!w3c && !ie45) return
+
+  var matrix=(w3c)?document.getElementById("matrix"):document.all["matrix"];
+
+  ma_txt=(w3c)?matrix.firstChild.nodeValue:matrix.innerHTML;
+
+  ma_txt=" "+ma_txt+" ";
+
+  columns=ma_txt.length;
+
+  if (w3c) {
+
+    while (matrix.childNodes.length) matrix.removeChild(matrix.childNodes[0]);
+
+    ma_tab=document.createElement("table");
+
+    ma_tab.setAttribute("border", 0);
+
+    ma_tab.setAttribute("align", effectalign);
+
+    ma_tab.style.backgroundColor="#000000";
+
+    ma_bod=document.createElement("tbody");
+
+    for (x=0; x<rows; x++) {
+
+      ma_row=document.createElement("tr");
+
+      for (y=0; y<columns; y++) {
+
+        matemp=document.createElement("td");
+
+        matemp.setAttribute("id", "Mx"+x+"y"+y);
+
+        matemp.className="matrix";
+
+        matemp.appendChild(document.createTextNode(String.fromCharCode(160)));
+
+        ma_row.appendChild(matemp);
+
+      }
+
+      ma_bod.appendChild(ma_row);
+
+    }
+
+    ma_tab.appendChild(ma_bod);
+
+    matrix.appendChild(ma_tab);
+
+  } else {
+
+    ma_tab='<ta'+'ble align="'+effectalign+'" border="0" style="background-color:#000000">';
+
+    for (var x=0; x<rows; x++) {
+
+      ma_tab+='<t'+'r>';
+
+      for (var y=0; y<columns; y++) {
+
+        ma_tab+='<t'+'d class="matrix" id="Mx'+x+'y'+y+'">&nbsp;</'+'td>';
+
+      }
+
+      ma_tab+='</'+'tr>';
+
+    }
+
+    ma_tab+='</'+'table>';
+
+    matrix.innerHTML=ma_tab;
+
+  }
+
+  ma_cho=ma_txt;
+
+  for (x=0; x<columns; x++) {
+
+    ma_cho+=String.fromCharCode(32+Math.floor(Math.random()*94));
+
+    m_copo[x]=0;
+
+  }
+
+  ma_bod=setInterval("mytricks()", speed);
+
+}
+
+
+
+function mytricks() {
+
+  x=0;
+
+  for (y=0; y<columns; y++) {
+
+    x=x+(m_copo[y]==100);
+
+    ma_row=m_copo[y]%100;
+
+    if (ma_row && m_copo[y]<100) {
+
+      if (ma_row<rows+1) {
+
+        if (w3c) {
+
+          matemp=document.getElementById("Mx"+(ma_row-1)+"y"+y);
+
+          matemp.firstChild.nodeValue=m_coch[y];
+
+        }
+
+        else {
+
+          matemp=document.all["Mx"+(ma_row-1)+"y"+y];
+
+          matemp.innerHTML=m_coch[y];
+
+        }
+
+        matemp.style.color="#33ff66";
+
+//        matemp.style.fontWeight="bold";
+
+      }
+
+      if (ma_row>1 && ma_row<rows+2) {
+
+        matemp=(w3c)?document.getElementById("Mx"+(ma_row-2)+"y"+y):document.all["Mx"+(ma_row-2)+"y"+y];
+
+        matemp.style.fontWeight="normal";
+
+        matemp.style.color="#00ff00";
+
+      }
+
+      if (ma_row>2) {
+
+          matemp=(w3c)?document.getElementById("Mx"+(ma_row-3)+"y"+y):document.all["Mx"+(ma_row-3)+"y"+y];
+
+        matemp.style.color="#009900";
+
+      }
+
+      if (ma_row<Math.floor(rows/2)+1) m_copo[y]++;
+
+      else if (ma_row==Math.floor(rows/2)+1 && m_coch[y]==ma_txt.charAt(y)) zoomer(y);
+
+      else if (ma_row<rows+2) m_copo[y]++;
+
+      else if (m_copo[y]<100) m_copo[y]=0;
+
+    }
+
+    else if (Math.random()>0.9 && m_copo[y]<100) {
+
+      m_coch[y]=ma_cho.charAt(Math.floor(Math.random()*ma_cho.length));
+
+      m_copo[y]++;
+
+    }
+
+  }
+
+  if (x==columns) clearInterval(ma_bod);
+
+}
+
+
+
+function zoomer(ycol) {
+
+  var mtmp, mtem, ytmp;
+
+  if (m_copo[ycol]==Math.floor(rows/2)+1) {
+
+    for (ytmp=0; ytmp<rows; ytmp++) {
+
+      if (w3c) {
+
+        mtmp=document.getElementById("Mx"+ytmp+"y"+ycol);
+
+        mtmp.firstChild.nodeValue=m_coch[ycol];
+
+      }
+
+      else {
+
+        mtmp=document.all["Mx"+ytmp+"y"+ycol];
+
+        mtmp.innerHTML=m_coch[ycol];
+
+      }
+
+      mtmp.style.color="#33ff66";
+
+//      mtmp.style.fontWeight="bold";
+
+    }
+
+    if (Math.random()<reveal) {
+
+      mtmp=ma_cho.indexOf(ma_txt.charAt(ycol));
+
+      ma_cho=ma_cho.substring(0, mtmp)+ma_cho.substring(mtmp+1, ma_cho.length);
+
+    }
+
+    if (Math.random()<reveal-1) ma_cho=ma_cho.substring(0, ma_cho.length-1);
+
+    m_copo[ycol]+=199;
+
+    setTimeout("zoomer("+ycol+")", speed);
+
+  }
+
+  else if (m_copo[ycol]>200) {
+
+    if (w3c) {
+
+      mtmp=document.getElementById("Mx"+(m_copo[ycol]-201)+"y"+ycol);
+
+      mtem=document.getElementById("Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol);
+
+    }
+
+    else {
+
+      mtmp=document.all["Mx"+(m_copo[ycol]-201)+"y"+ycol];
+
+      mtem=document.all["Mx"+(200+rows-m_copo[ycol]--)+"y"+ycol];
+
+    }
+
+    mtmp.style.fontWeight="normal";
+
+    mtem.style.fontWeight="normal";
+
+    setTimeout("zoomer("+ycol+")", speed);
+
+  }
+
+  else if (m_copo[ycol]==200) m_copo[ycol]=100+Math.floor(rows/2);
+
+  if (m_copo[ycol]>100 && m_copo[ycol]<200) {
+
+    if (w3c) {
+
+      mtmp=document.getElementById("Mx"+(m_copo[ycol]-101)+"y"+ycol);
+
+      mtmp.firstChild.nodeValue=String.fromCharCode(160);
+
+      mtem=document.getElementById("Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol);
+
+      mtem.firstChild.nodeValue=String.fromCharCode(160);
+
+    }
+
+    else {
+
+      mtmp=document.all["Mx"+(m_copo[ycol]-101)+"y"+ycol];
+
+      mtmp.innerHTML=String.fromCharCode(160);
+
+      mtem=document.all["Mx"+(100+rows-m_copo[ycol]--)+"y"+ycol];
+
+      mtem.innerHTML=String.fromCharCode(160);
+
+    }
+
+    setTimeout("zoomer("+ycol+")", speed);
+
+  }
+
+}
+
+// -->
+
+</script>
+
+
+
+<div align=center id="matrix">
+
+        
+
+.:: SULAWESI CLASSY CYBER ::.
+
+        
+
+</div>
+
+
+
+<html>
+
+<title>PATTAENGGI SIRINU :'(</title>
+
+
+
+<body bgcolor="#000000" text="white">
+
+<!--
+
+<center><font size="6" color=cyan >TheLastKey420 Contak Me:081240632896</font></center><br>
+
+-->
+
+<center>
+
+<br><br>
+
+<p> <font face="courier new"><font size="4" color=yellow><blink><font color=pink>Jangan Pernah Berbangga Diri </font></blink> Jika Kita Di Puji</font><br><br>
+<font size="5" color=red>Jangan Pernah Mengusik Kami Jika ingin Aman<br><br><font size="5" color=blue>Anda sopan kami segang</font>
+
+
+
+<center><font size="6" color=cyan >SulawesiClassyCyber & IndonesiaHackingTeam</font></center><center><br>
+
+
+
+<br>
+
+<font size=2 color=" face="Tahoma" >HARAPANKU : </font><marquee direction=left behavior=alternate scrollamount="2" scrolldelay="20" width="30%"><font color="white" face="verdana">
+
+<font size=1 color="c0c0c0">
+
+Utamakan Kesatuan Dan Persatuan..Silaturahmi Kepada sesama..tunjukkan Sulawesi mempunya adab yg baik..we are sulawesi classy cyber
+
+
+</font>
+
+</font></marquee><br>
+
+
+<font size="2" color=cyan ><b><a href="http://m.facebook.com/antujhie77">.:: hubungi saya ::.</a></b>
+</p></center>
+
+
+</body></html>
